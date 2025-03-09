@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>kameiのゲームポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>kameiのゲームポートフォリオ</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>はじめに</h2>
+            <p>ご覧いただきありがとうございます。ここは私、亀井が制作したゲーム作品を紹介するページです。</p>
+            <p>紹介する2作品は、ゲーム制作に対する情熱に気づいた自分が、この8ヶ月ほどの間に、1人で企画・実装し、友人や同期を中心に遊んでもらいながら調整を重ねたものです。イラスト素材やコーディングのサポートには生成AIも活用しています。</p>
+            <p>長く制作に携わっている方々の作品と比べると至らない点も多くあるかと思いますが、私の思考プロセスを示す材料として見ていただければ幸いです。</p>
+            
+            <h3>ポリシー</h3>
+            <p>2作品を通して私が重視したポイントは以下の2点です。</p>
+
+            <ul>
+                <li><strong>引き算の美学</strong>　 - 余計な要素を削ぎ落とした、シンプルな形を目指す</li>
+                <li><strong>少しばかりの新規性</strong> 　- 既存の枠組みに小さな新しさを</li>
+            </ul>
+            <p>これらのバランスを突き詰め、シンプルながらも新鮮さを感じられるコンセプトの実現を目指しました。</p>
+        </section>
+
+        <section class="games">
+            <!-- diGiT WorLd ゲーム -->
+            <div class="game-card">
+                <h2>diGiT WorLd</h2>
+                <div class="game-preview">
+                    <img src="assets/digitworld-screenshot.jpg" alt="diGiT WorLd ゲームのスクリーンショット" onerror="this.src='https://via.placeholder.com/400x300?text=diGiT+WorLd'">
+                </div>
+                <div class="game-actions">
+                    <a href="digitworld/index.html" class="btn play-btn">プレイする</a>
+                    <a href="https://github.com/kamei722/diGiT-WorLd" target="_blank" class="btn source-btn">ソースコード</a>
+                    <a href="https://drive.google.com/drive/folders/18P1xT4akitXNGIQQjqRw4CUnurJMLJFM" target="_blank" class="btn docs-btn">その他</a>
+                </div>
+                <div class="game-info">
+                    <h3>ゲーム概要</h3>
+                    <p>変化する数字の足場の中で鍵を集める、シンプルでレトロなアクションゲームです。</p>
+                    
+                    <h3>モチベーション</h3>
+                    <p>私の思うアクションゲーム最大の魅力である「頭での思考と記憶」が「手先の操作」と連動するハーモニーを、シンプルな形で実現することを目指して開発しました。プレイヤーが考えた道筋がうまく表現され達成感を味わえるゲーム体験の創出を目標としました。</p>
+                    
+                    <h3>こだわりポイント</h3>
+                    <div class="feature-points">
+                        <div class="feature">
+                            <h4>シンプルにまとまったゲーム性</h4>
+                            <div class="feature-media">
+                                <!-- GIF ここ -->
+                                <img src="assets/digitworld.gif" alt="diGiT WorLd ゲームプレイ" class="feature-gif">
+                            </div>
+                            <p>アクションはゲームの王道である上下左右の移動に、変化する数字の足場を組み合わせました。シンプルながらも奥深い探索要素により、直感的に理解でき、かつ集中力を要する構造を実現しています。</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h4>ステージデザイン</h4>
+                            <div class="feature-media stages">
+                                <img src="assets/digitworld_stage1.png" alt="ステージ1" class="stage-img">
+                            </div>
+                            <p>規則的な数列モチーフとアクションの面白さを両立する設計を目指しました。構成としても多くのパターンを試し、難易度の自然な上昇と新たな発見を両立させ、プレイヤーが継続的に刺激を受けられるレベルデザインを追求しました。</p>
+                        </div>
+                    </div>
+                    
+                    <h3>使用技術</h3>
+                    <p>本作は全てPythonで実装しています。私の主要言語がPythonだったため、Pygameを活用してゲーム開発の基礎を学びました。キャラクターの移動制御、衝突判定、ステージデータの読み込みなど、ゲーム開発の基本要素を1から実装することで、ゲーム制作の根幹を理解する貴重な経験となりました。</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Pygame</li>
+                    </ul>
+                    
+                    <h3>リソース</h3>
+                    <ul>
+                        <li>BGM・効果音：<a href="https://www.springin.org/sound-stock/" target="_blank">Springin' Sound Stock</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- もちもちじゃんけん ゲーム -->
+            <div class="game-card">
+                <h2>もちもちじゃんけん</h2>
+                <div class="game-preview">
+                    <img src="assets/mochimochi-screenshot.jpg" alt="もちもちじゃんけんのスクリーンショット" onerror="this.src='https://via.placeholder.com/400x300?text=もちもちじゃんけん'">
+                </div>
+                <div class="game-actions">
+                    <a href="mochimochi/index.html" class="btn play-btn">プレイする</a>
+                    <a href="https://github.com/kamei722/mochimochi-janken" target="_blank" class="btn source-btn">ソースコード</a>
+                    <a href="https://drive.google.com/drive/folders/1iaulnK_fhfHrJ7_rowR5Z6RmBaKFA9Y6" target="_blank" class="btn docs-btn">その他資料</a>
+                </div>
+                <div class="game-info">
+                    <h3>ゲーム概要</h3>
+                    <p>ランダムに決定される相性で、その相性を予測しながら目標得点を目指す、もちをモチーフとした戦略型じゃんけんゲームです。</p>
+                    
+                    <h3>モチベーション</h3>
+                    <p>様々なゲームやカードゲームをプレイする中で、「運とスキルのバランス」や「プレイヤー間の駆け引き」について考えるようになりました。自分なりに、シンプルで戦略性とギャンブル要素を兼ね備えたゲームという難しいお題を設定して、このゲームを制作しました。</p>
+                    
+                    <h3>こだわりポイント</h3>
+                    <div class="feature-points">
+                        <div class="feature">
+                            <h4>ゲーム性とデザインのバランス</h4>
+                            <div class="feature-media">
+                                <img src="assets/aisyou.png" alt="もちもちじゃんけんの相性表" class="feature-img">
+                            </div>
+                            <p>ゲームシステムを先に考案した後、それをどうプレイヤーに届けるか検討しました。「ランダムに決まる概念の表現」「同じ手ばかり選ぶのを防ぐには」といった課題に対して、「属性の概念が不要で親しみやすい」「団子という形での履歴管理」がマッチしていると考えモチーフを「もち」に定め、「おばあちゃんちで遊ぶ」ような温かみのある雰囲気のゲームに仕上げました。</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h4>選択に意味を持たせる工夫</h4>
+                            <div class="feature-media">
+                                <img src="assets/dango.png" alt="だんごボーナス" class="feature-img">
+                            </div>
+                            <p>直近3回で異なる種類の餅を選ぶと「だんごボーナス」が発生するルールを導入しました。「団子の色を変える」という視覚的な目標、プレイヤーが多様な選択肢を試すような誘導、相手の選択を予測する駆け引きの要素という3つ役割を持つ要素になりました。</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h4>カスタマイズ性</h4>
+                            <div class="feature-media">
+                                <img src="assets/menu.png" alt="カスタマイズメニュー" class="feature-img">
+                            </div>
+                            <p>メニュー画面で様々なゲーム設定を変更できるようにし、自分の好みや腕前に合わせてプレイできるようにしました。より幅広いプレイヤーに向けた工夫になっています。</p>
+                        </div>
+                    </div>
+                    
+                    <h3>使用技術</h3>
+                    <p>Unity + C#で開発した本作は、私にとって初めてのゲームエンジンの利用であり。それまで経験したことのない規模で、ゲーム状態管理、AI実装、UI設計など、多岐にわたる技術を一度に学び実践する貴重な経験となりました。</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>C#</li>
+                    </ul>
+                    
+                    <h3>リソース</h3>
+                    <ul>
+                        <li>Font：<a href="https://www.kfstudio.net" target="_blank">KFひま字ふで</a></li>
+                        <li>BGM：<a href="http://bgmer.net" target="_blank">BGMer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 kamei722. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
